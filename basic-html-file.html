@@ -4,30 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <title>Student Bio</title>
+    <style>
+        /*
+    			NOTE: Commenting is a bit different in CSS. 
+    		  They start with forward-slash + asterisk 
+    		  and end with back-slash + asterisk.
+    		  */
+        /* h1 heading tag */
+    
+        h1 {
+            /* Put a 15-pixel margin at the bottom of the heading. */
+            margin-bottom: 15px;
+            /* Change the size of your font to 60 pixels high. */
+            font-size: 60px;
+            /* This will color the heading font white. */
+            color: white;
+            /* Align the text to the center of its enclosing element (e.g. div). */
+            text-align: center;
+            /* Underline the text. */
+            text-decoration: underline;
+            /* The background of the heading element will now be black. */
+            background-color: black;
+        }
+    
+        /* h2 heading tags */
+    
+        h2 {
+            /* Put a 15-pixel margin at the top of all h2 headings. */
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-size: 40px;
+            text-align: center;
+        }
+    
+        /* h3 heading tags */
+    
+        h3 {
+            margin-top: 15px;
+            font-size: 20px;
+            text-align: center;
+        }
+    
+        /* All img tags */
+    
+        img {
+            /* 
+    				Center a block element in the middle of its enclosing tag.
+    				When you use the "auto" rule on both left and right margins, 
+    				your browser will do the math necessary to center a block element.
+    				*/
+            margin-left: auto;
+            margin-right: auto;
+            /* Block display (more on this later) */
+            display: block;
+        }
+    
+        /* All p tags */
+    
+        p {
+            text-align: center;
+            font-size: 20px;
+            /* Bold the text. */
+            font-weight: bold;
+        }
+    
+        /* All unordered list tags */
+    
+        ul {
+            text-align: center;
+            font-size: 35px;
+            /* Give an element a solid border. */
+            border-style: solid;
+            /* Render the border 5 pixels thick. */
+            border-width: 5px;
+            /* Include bullets in the content flow. */
+            /* More info here: http://www.w3schools.com/cssref/pr_list-style-position.asp */
+            list-style-position: inside;
+        }
+    </style>
 </head>
 
 <body>
-    <h1> Student Bio</h1>
+    <!-- Site Header -->
+    <header>
+        <h1> Student Bio</h1>
+    </header>
     <br>
-    <h2>Thomas Headle</h2>
-    <img src="https://media.licdn.com/dms/image/C4E03AQFOWDJXcYwgJQ/profile-displayphoto-shrink_200_200/0?e=1547078400&v=beta&t=v-IyvLwiJVHT_rokbO08tenuqmFDNXQwSMGh7CJhCy4"
-        height="200" width="200">
-    <p>Colorado based aspiring developer who focuses his time on creating something out of unique thoughts, spending
-        time with
-        his wife and dogs, or outdoors.</p>
-    <p>I have a strong passion for serving and helping others that has led me to many pursuits in hopes of finding
-        where I can
-        make a difference. </p>
+    <div>
+        <!-- Bio Section -->
+        <section>
+            <h2>Thomas Headle</h2>
 
-    <p> Welcome to my journey into <strong><i>Software Development</i></strong>.
-    </p>
-    <br>
-    <h2>Contact Info</h2>
-    <ul>
-        <li>Email:<a href="mailto:tgheadle@gmail.com">TGHeadle@gmail.com</a></li>
-        <li>Github:<a href="https://github.com/TGHeadle1371" target="_blank">TGHeadle1371</a></li>
-        <li>Portfolio:<a href="">Coming soon!</a></li>
-    </ul>
+            <!-- Embeded link -->
+            <img src="https://media.licdn.com/dms/image/C4E03AQFOWDJXcYwgJQ/profile-displayphoto-shrink_200_200/0?e=1547078400&v=beta&t=v-IyvLwiJVHT_rokbO08tenuqmFDNXQwSMGh7CJhCy4"
+                height="200" width="200">
+            <p>Colorado based aspiring developer who focuses his time on creating something out of unique thoughts,
+                spending
+                time with
+                his wife and dogs, or outdoors.</p>
+            <p>I have a strong passion for serving and helping others that has led me to many pursuits in hopes of
+                finding
+                where I can
+                make a difference. </p>
+
+            <p> Welcome to my journey into <strong><i>Software Development</i></strong>.
+            </p>
+        </section> 
+        <br>
+        <!-- Section 2: Contact -->
+        <section>
+            <h2>Contact Info</h2>
+            <!-- Unordered list -->
+            <ul>
+                <li><strong>Email:</strong><a href="mailto:tgheadle@gmail.com">TGHeadle@gmail.com</a></li>
+                <li><strong>Github:</strong><a href="https://github.com/TGHeadle1371" target="_blank">TGHeadle1371</a></li>
+                <li><strong>Portfolio:</strong><a href="">Coming soon!</a></li>
+            </ul>
+        </section>
+    </div>
 </body>
 
 </html>
